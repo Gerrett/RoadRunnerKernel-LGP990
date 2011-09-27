@@ -27,12 +27,6 @@
 #define CFS_BOOST_NICE -10
 
 
-// SDram Hack stuff
-
-#define VORK_EMC_VOLT 1200
-#define VORK_EMC2_FREQ ( VORK_AVP_FREQ * 5 / 2 ) 
-#define VORK_DDR_FREQ ( VORK_EMC2_FREQ / 2 ) 
-
 #endif /* __KERNEL__ */
 
 #endif
