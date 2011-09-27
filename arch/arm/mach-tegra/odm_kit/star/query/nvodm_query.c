@@ -49,8 +49,6 @@
 #include "tegra_devkit_custopt.h"
 #include "nvodm_keylist_reserved.h"
 #include "nvrm_drf.h"
-#inclue <linux/vorkKernel.h>
-
 
 #define NVODM_ENABLE_EMC_DVFS (1)
 
@@ -349,8 +347,8 @@ static const NvOdmSdramControllerConfigAdv s_NvOdmStarSmartphoneHynixEmcConfigTa
     },
     {
                   0x20,   /* Rev 2.0 */
-         VORK_DDR_FREQ,   /* SDRAM frquency */
-         VORK_EMC_VOLT,   /* EMC core voltage */
+         ,      350000,   /* SDRAM frquency */
+                  1250,   /* EMC core voltage */
                     46,   /* Number of EMC parameters below */
         {
             0x00000012,   /* RC */
@@ -677,8 +675,8 @@ static const NvOdmSdramControllerConfigAdv s_NvOdmStarSmartphoneHynixEmcConfigTa
     },
     {
                   0x20,   /* Rev 2.0 */
-         VORK_DDR_FREQ,   /* SDRAM frquency */
-         VORK_EMC_VOLT,   /* EMC core voltage */
+                350000,   /* SDRAM frquency */
+                  1250,   /* EMC core voltage */
                     46,   /* Number of EMC parameters below */
         {
 					  0x00000012,	/* RC */
